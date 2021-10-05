@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;700 & family= Lexend+Deca & display=swap'); 
 :root{
     --bg-main:hsl(233, 47%, 7%);
     --card-bg:hsl(244, 38%, 16%);
@@ -32,9 +31,11 @@ body{
     padding: 60px 90px 40px 60px;
 
 }
-.card h2 ,h4{
+.card h1 ,.strong{
     font-family: var(--f-family-Inter);
     font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 2em;
 }
 .image{
     border-radius:0 5px 5px 0;
@@ -44,9 +45,7 @@ body{
     background-position: center;
     padding: 0;
 }
-.header{
-    padding-bottom: 10px;
-}
+
 .accent{
     color: hsl(277, 64%, 61%);
 }
@@ -68,7 +67,7 @@ body{
     height: 100%;
     opacity: 0.5;
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:400px){
     .image{
         background-image: url("images/image-header-mobile.jpg");
         height: 190px;
@@ -78,9 +77,8 @@ body{
         border-radius:5px 5px 0px 0;
 
     }
-    h2{
-        font-size: 13px;
-        transform: scale(1.5);
+    .card h1{
+        font-size: 1em;
     }
     .content{
         flex-direction: column-reverse;
@@ -90,7 +88,7 @@ body{
     }
     .paragraph{
         text-align: center;
-        font-size: 7.9px;
+        font-size: 7px;
         transform: scale(1.5);
         padding-top:5px ;
     }
